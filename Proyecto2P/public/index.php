@@ -81,13 +81,6 @@ $pagina = $_GET['pagina'] ?? 'inicio';
 
             </a>
 
-            <a class="nav__link"
-               href="index.php?pagina=info">
-
-                Información
-
-            </a>
-
             <button class="theme-btn"
                     id="themeBtn">
 
@@ -816,12 +809,12 @@ break;
     <section class="section">
         <div class="container">
             <div class="content-box">
-                <h2>Elige el plan que mejor se adapte a ti</h2>
-                <p>
-                    EnglishPro ofrece alternativas accesibles y progresivas para estudiantes
-                    de distintos niveles. Puedes comenzar desde lo básico y avanzar de forma
-                    continua hasta desarrollar un dominio más sólido del idioma.
-                </p>
+                <h2>Elige un plan y registra la inscripción</h2>
+                  <p>
+                    EnglishPro permite seleccionar un curso según el nivel del estudiante y
+                    registrar la inscripción dentro del sistema administrativo, manteniendo
+                    organizada la relación entre estudiantes y cursos.
+                  </p>
 
                 <div class="hero__actions">
                     <a class="btn btn--primary"
@@ -830,276 +823,12 @@ break;
                     </a>
 
                     <a class="btn btn--ghost"
-                       href="index.php?pagina=info">
-                        Ver más información
+                      href="index.php?pagina=cursos">
+                        Ver cursos disponibles
                     </a>
+
                 </div>
             </div>
-        </div>
-    </section>
-
-    ';
-
-break;
-
-
-       case "info":
-
-    echo '
-
-    <section class="page-hero">
-        <div class="container">
-            <span class="badge">Información del proyecto</span>
-            <h1>EnglishPro como solución educativa y administrativa</h1>
-            <p>
-                EnglishPro es una aplicación web desarrollada para facilitar la gestión de cursos
-                de inglés, estudiantes e inscripciones, ofreciendo una alternativa organizada,
-                accesible y moderna para academias o proyectos educativos.
-            </p>
-        </div>
-    </section>
-
-
-    <section class="section">
-        <div class="container two-col">
-
-            <article class="content-box">
-                <h2>Problemática</h2>
-
-                <p>
-                    Muchas personas desean aprender inglés para mejorar sus oportunidades académicas,
-                    laborales y personales. Sin embargo, en instituciones pequeñas o emprendimientos
-                    educativos, la administración de cursos, estudiantes e inscripciones suele realizarse
-                    de forma manual o desorganizada.
-                </p>
-
-                <br>
-
-                <p>
-                    Esto puede provocar pérdida de información, registros duplicados, dificultad para
-                    consultar estudiantes inscritos y poca claridad sobre qué cursos están disponibles.
-                    Además, cuando no existe una plataforma centralizada, el seguimiento académico se vuelve
-                    más lento y menos eficiente.
-                </p>
-            </article>
-
-
-            <article class="content-box">
-                <h2>Solución propuesta</h2>
-
-                <p>
-                    EnglishPro propone un sistema web que centraliza la información académica en una base
-                    de datos MySQL. A través de una interfaz sencilla, el usuario puede registrar cursos,
-                    administrar estudiantes y controlar las inscripciones entre ambos.
-                </p>
-
-                <br>
-
-                <p>
-                    De esta manera, la aplicación permite organizar mejor la información, reducir errores
-                    manuales y acceder al sistema desde un navegador web, facilitando la gestión educativa.
-                </p>
-            </article>
-
-        </div>
-    </section>
-
-
-    <section class="section section--alt">
-        <div class="container">
-
-            <div class="section__head">
-                <span class="section__tag">Objetivo</span>
-                <h2>¿Qué busca resolver EnglishPro?</h2>
-            </div>
-
-            <div class="cards-grid">
-
-                <article class="info-card">
-                    <h3>Organización académica</h3>
-                    <p>
-                        Permite administrar la información de cursos, estudiantes e inscripciones
-                        desde un solo sistema, evitando el uso de registros dispersos o manuales.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <h3>Acceso desde navegador</h3>
-                    <p>
-                        Al estar desplegado en la web, el sistema puede ser consultado desde un navegador,
-                        sin depender únicamente de una computadora local.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <h3>Control de inscripciones</h3>
-                    <p>
-                        Relaciona estudiantes con cursos mediante una tabla de inscripciones, permitiendo
-                        saber qué estudiante pertenece a cada curso registrado.
-                    </p>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="section">
-        <div class="container two-col">
-
-            <article class="content-box">
-                <h2>¿Por qué cursos de inglés?</h2>
-
-                <p>
-                    El inglés es una herramienta importante para el crecimiento académico y profesional.
-                    Muchas personas buscan aprenderlo para acceder a mejores oportunidades laborales,
-                    comprender contenido internacional, viajar, estudiar o comunicarse con personas de
-                    otros países.
-                </p>
-
-                <br>
-
-                <p>
-                    Por esta razón, EnglishPro se enfoca en ofrecer una estructura de cursos por niveles:
-                    Básico, Intermedio y Avanzado, permitiendo que cada estudiante pueda avanzar según
-                    sus conocimientos y necesidades.
-                </p>
-            </article>
-
-
-            <article class="content-box">
-                <h2>Beneficios para los usuarios</h2>
-
-                <ul class="list">
-                    <li>Consultar cursos disponibles.</li>
-                    <li>Registrar estudiantes de forma organizada.</li>
-                    <li>Inscribir estudiantes en cursos específicos.</li>
-                    <li>Actualizar información cuando sea necesario.</li>
-                    <li>Eliminar registros incorrectos o innecesarios.</li>
-                    <li>Acceder al sistema desde una página web.</li>
-                </ul>
-            </article>
-
-        </div>
-    </section>
-
-
-    <section class="section section--alt">
-        <div class="container">
-
-            <div class="section__head">
-                <span class="section__tag">Funcionamiento</span>
-                <h2>Módulos principales del sistema</h2>
-            </div>
-
-            <div class="timeline">
-
-                <article class="timeline__item">
-                    <h3>Cursos</h3>
-                    <p>
-                        Este módulo permite registrar, listar, buscar, editar y eliminar cursos de inglés.
-                        Cada curso contiene datos como nombre, nivel, precio, duración y descripción.
-                    </p>
-                </article>
-
-                <article class="timeline__item">
-                    <h3>Estudiantes</h3>
-                    <p>
-                        Permite administrar la información de los estudiantes registrados en la plataforma,
-                        incluyendo nombre, apellido, correo electrónico y teléfono.
-                    </p>
-                </article>
-
-                <article class="timeline__item">
-                    <h3>Inscripciones</h3>
-                    <p>
-                        Relaciona estudiantes con cursos. Este módulo demuestra el uso de claves foráneas
-                        y consultas relacionadas entre tablas de la base de datos.
-                    </p>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="section">
-        <div class="container two-col">
-
-            <article class="content-box">
-                <h2>Estructura general del proyecto</h2>
-
-                <p>
-                    El sistema fue desarrollado aplicando el patrón Modelo Vista Controlador. Esta estructura
-                    permite separar la lógica del sistema, la conexión con la base de datos y la presentación
-                    visual de la aplicación.
-                </p>
-
-                <br>
-
-                <ul class="list">
-                    <li><strong>Modelo:</strong> gestiona las consultas y operaciones con la base de datos.</li>
-                    <li><strong>Vista:</strong> muestra la interfaz que observa el usuario.</li>
-                    <li><strong>Controlador:</strong> recibe las acciones y coordina el flujo del sistema.</li>
-                </ul>
-            </article>
-
-
-            <article class="content-box">
-                <h2>Conexión con la base de datos</h2>
-
-                <p>
-                    EnglishPro utiliza una base de datos MySQL para almacenar la información del sistema.
-                    La conexión se realiza mediante PDO, lo que permite trabajar de forma más segura y
-                    ordenada con las consultas SQL.
-                </p>
-
-                <br>
-
-                <p>
-                    Para el despliegue web, la base de datos se encuentra alojada en Aiven y la aplicación
-                    fue publicada en Render, permitiendo que el sistema sea accesible desde Internet.
-                </p>
-            </article>
-
-        </div>
-    </section>
-
-
-    <section class="section section--alt">
-        <div class="container">
-
-            <div class="content-box">
-                <h2>Importancia del sistema</h2>
-
-                <p>
-                    EnglishPro no solo funciona como una página informativa sobre cursos de inglés, sino
-                    como una aplicación administrativa capaz de gestionar información real. Esto permite
-                    demostrar conocimientos de desarrollo web, bases de datos, arquitectura MVC, operaciones
-                    CRUD y despliegue en la nube.
-                </p>
-
-                <br>
-
-                <p>
-                    Gracias a esta solución, una academia o proyecto educativo puede organizar mejor sus
-                    procesos internos, reducir errores en el manejo de información y ofrecer una experiencia
-                    más moderna tanto para administradores como para estudiantes.
-                </p>
-
-                <div class="hero__actions">
-                    <a class="btn btn--primary" href="index.php?pagina=cursos">
-                        Ver cursos
-                    </a>
-
-                    <a class="btn btn--ghost" href="index.php?pagina=inscripciones">
-                        Ver inscripciones
-                    </a>
-                </div>
-            </div>
-
         </div>
     </section>
 
