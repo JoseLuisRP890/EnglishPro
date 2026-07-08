@@ -33,18 +33,3 @@ CREATE TABLE inscripciones (
         ON UPDATE CASCADE
         ON DELETE CASCADE
 );
-
-INSERT INTO cursos (nombre, nivel, precio, duracion, descripcion) VALUES
-('Inglés Básico', 'Básico', 25.00, '3 meses', 'Curso para estudiantes que inician desde cero.'),
-('Inglés Intermedio', 'Intermedio', 40.00, '4 meses', 'Curso para mejorar la comunicación y comprensión.'),
-('Inglés Avanzado', 'Avanzado', 60.00, '5 meses', 'Curso orientado al inglés profesional y académico.');
-
-INSERT INTO estudiantes (nombre, apellido, correo, telefono) VALUES
-('José', 'Rivadeneira', 'jose@email.com', '0991111111'),
-('María', 'Pérez', 'maria@email.com', '0982222222'),
-('Carlos', 'López', 'carlos@email.com', '0973333333');
-
-INSERT INTO inscripciones (id_estudiante, id_curso, fecha_inscripcion) VALUES
-(1, 1, '2026-07-04'),
-(2, 2, '2026-07-04'),
-(3, 3, '2026-07-04');
