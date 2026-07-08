@@ -1,0 +1,101 @@
+/* normalize.css básico y ligero para EnglishPro */
+
+/* Control general del modelo de caja */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Configuración base del documento */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Elimina márgenes por defecto */
+body {
+  margin: 0;
+}
+
+/* Asegura comportamiento correcto del contenido principal */
+main {
+  display: block;
+}
+
+/* Limpieza de márgenes en títulos y textos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Listas sin estilos por defecto */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Enlaces limpios */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imágenes responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Formularios heredando fuente */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Botones sin estilos por defecto */
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+/* Textarea ajustable solo verticalmente */
+textarea {
+  resize: vertical;
+}
+
+/* Evita bordes raros en navegadores */
+input,
+select,
+textarea,
+button {
+  outline: none;
+}
+
+/* Tablas más consistentes */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Mejor experiencia para usuarios que navegan con teclado */
+:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.45);
+  outline-offset: 3px;
+}
